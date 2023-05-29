@@ -72,7 +72,9 @@ const getBook = (request, h) => {
     const book = findBookById(bookId);
     const response = h.response({
       status: 'success',
-      book,
+      data: {
+        book,
+      },
     });
     response.code(200);
     return response;
