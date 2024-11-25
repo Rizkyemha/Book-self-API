@@ -18,4 +18,5 @@ const init = async () => {
   console.log(`Server berjalan pada ${server.info.uri}`);
 };
 
-init();
+// init();
+module.exports = init
